@@ -1,4 +1,11 @@
-import {data} from "./data/data.js";
-import "./models/question.js"
+//@ts-check
 
-console.log(data);
+import {newQuestions} from './data/questions.js';
+import { Quiz } from './models/Quiz.js';
+
+
+function main() {
+  const quiz = new Quiz(newQuestions);
+}
+
+main();
